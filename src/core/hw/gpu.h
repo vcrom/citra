@@ -75,6 +75,7 @@ struct Regs {
         default:
             UNIMPLEMENTED();
         }
+		UNREACHABLE();
     }
 
     INSERT_PADDING_WORDS(0x4);

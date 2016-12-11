@@ -100,6 +100,8 @@ public:
         case HandleType::CodeSet:
         case HandleType::ClientPort:
             return false;
+        default:
+            UNREACHABLE();
         }
     }
 
