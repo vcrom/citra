@@ -83,6 +83,8 @@ const char* GetLogClassName(Class log_class) {
 #undef SUB
     case Class::Count:
         UNREACHABLE();
+    default:
+        UNREACHABLE();
     }
 }
 
@@ -98,6 +100,7 @@ const char* GetLevelName(Level log_level) {
         LVL(Error);
         LVL(Critical);
     case Level::Count:
+	default:
         UNREACHABLE();
     }
 #undef LVL

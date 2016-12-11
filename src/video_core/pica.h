@@ -708,6 +708,7 @@ struct Regs {
             LOG_CRITICAL(HW_GPU, "Unknown depth format %u", format);
             UNIMPLEMENTED();
         }
+		UNREACHABLE();
     }
 
     // Returns the number of bits per depth component of the specified depth format
@@ -722,6 +723,7 @@ struct Regs {
             LOG_CRITICAL(HW_GPU, "Unknown depth format %u", format);
             UNIMPLEMENTED();
         }
+        UNREACHABLE();
     }
 
     INSERT_PADDING_WORDS(0x20);

@@ -535,6 +535,8 @@ void RunInterpreter(const ShaderSetup& setup, UnitState<Debug>& state, unsigned 
 
                 case flow_control.JustY:
                     return results[1];
+				default:
+					UNREACHABLE();
                 }
             };
 

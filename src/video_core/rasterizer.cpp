@@ -681,6 +681,8 @@ static void ProcessTriangleInternal(const Shader::OutputVertex& v0, const Shader
 
                     case ColorModifier::OneMinusSourceBlue:
                         return (Math::Vec3<u8>(255, 255, 255) - values.bbb()).Cast<u8>();
+                    default:
+                        UNREACHABLE();
                     }
                 };
 
@@ -710,6 +712,8 @@ static void ProcessTriangleInternal(const Shader::OutputVertex& v0, const Shader
 
                     case AlphaModifier::OneMinusSourceBlue:
                         return 255 - values.b();
+                    default:
+                        UNREACHABLE();
                     }
                 };
 
@@ -1253,6 +1257,8 @@ static void ProcessTriangleInternal(const Shader::OutputVertex& v0, const Shader
 
                     case Regs::LogicOp::OrInverted:
                         return ~src | dest;
+					default:
+						UNREACHABLE();
                     }
                 };
 
